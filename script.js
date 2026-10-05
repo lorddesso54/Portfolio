@@ -40,13 +40,13 @@ document.querySelectorAll('[data-evidence-image]').forEach((figure) => {
   function showEvidenceImage() {
     image.hidden = false;
     if (caption) caption.hidden = false;
-    hint.hidden = true;
+    if (hint) hint.hidden = true;
   }
 
   function showEvidenceHint() {
     image.hidden = true;
     if (caption) caption.hidden = true;
-    hint.hidden = false;
+    if (hint) hint.hidden = false;
   }
 
   image.addEventListener('load', showEvidenceImage);
