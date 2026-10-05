@@ -57,6 +57,8 @@ document.querySelectorAll('[data-evidence-image]').forEach((figure) => {
   }
 });
 
+// make a simple image viewer for images with the data-image-viewer attribute
+
 const imageViewer = document.querySelector('.image-viewer');
 
 if (imageViewer instanceof HTMLDialogElement) {
